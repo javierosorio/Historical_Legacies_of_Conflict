@@ -1,0 +1,47 @@
+
+ Generalized stsls
+
+Call:
+spreg(formula = selfdefense_presence2 ~ brig_all + Railways + 
+    telegraphs + rurales + morelos + mina + hidalgo + guerrero + 
+    french + dist_state_capital_log + elevation_log + dist_rail_k + 
+    gulf_3 + North_3 + Pacific_3 + pop_den_1921 + rural_p_1921 + 
+    cathol_p_1921 + agri_area_1928 + gov_fed_10K_1292 + police_10K_1928 + 
+    analfa_1921 + mem_per_union_1929, data = bishops, listw = nb_InvB, 
+    initial.value = 0.2, model = "lag", het = TRUE)
+
+Residuals:
+    Min.  1st Qu.   Median     Mean  3rd Qu.     Max. 
+-0.74225 -0.10006 -0.02888  0.00714  0.00780  1.06197 
+
+Coefficients:
+                          Estimate  Std. Error t-value  Pr(>|t|)    
+(Intercept)             1.1841e-01  1.3040e-01  0.9081 0.3638306    
+brig_all                5.8819e-02  1.6908e-02  3.4788 0.0005037 ***
+Railways                6.9178e-03  1.3274e-02  0.5212 0.6022548    
+telegraphs              1.8812e-02  1.2154e-02  1.5479 0.1216569    
+rurales                 1.0102e-02  1.3223e-02  0.7640 0.4448657    
+morelos                 2.0287e-01  5.1169e-02  3.9647 7.348e-05 ***
+mina                    1.9284e-02  7.9889e-02  0.2414 0.8092542    
+hidalgo                 6.2623e-02  5.5927e-02  1.1197 0.2628243    
+guerrero                1.4580e-01  8.1947e-02  1.7792 0.0751999 .  
+french                 -1.3265e-03  3.6673e-02 -0.0362 0.9711468    
+dist_state_capital_log -1.4851e-02  5.9863e-03 -2.4808 0.0131082 *  
+elevation_log           3.6144e-03  1.7235e-03  2.0971 0.0359841 *  
+dist_rail_k             1.7144e-04  1.6069e-04  1.0669 0.2860024    
+gulf_3                  3.0731e-02  1.7544e-02  1.7517 0.0798220 .  
+North_3                 4.6783e-02  2.8113e-02  1.6641 0.0960948 .  
+Pacific_3               9.3012e-02  1.9521e-02  4.7646 1.892e-06 ***
+pop_den_1921            1.0236e-03  2.4664e-04  4.1502 3.322e-05 ***
+rural_p_1921           -4.0357e-01  1.0138e-01 -3.9807 6.871e-05 ***
+cathol_p_1921           2.6757e-01  1.3848e-01  1.9322 0.0533321 .  
+agri_area_1928         -3.0735e-03  1.0813e-03 -2.8425 0.0044765 ** 
+gov_fed_10K_1292        2.3512e-03  3.8530e-04  6.1022 1.046e-09 ***
+police_10K_1928        -8.8982e-03  1.9656e-03 -4.5269 5.987e-06 ***
+analfa_1921             1.9364e-03  6.1600e-04  3.1434 0.0016699 ** 
+mem_per_union_1929     -2.0959e-04  7.3056e-05 -2.8689 0.0041194 ** 
+lambda                  1.2264e+00  1.5153e-01  8.0934 5.804e-16 ***
+rho                    -6.2974e-01  1.2608e-01 -4.9948 5.889e-07 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+

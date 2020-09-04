@@ -1,0 +1,57 @@
+
+ Generalized stsls
+
+Call:
+spreg(formula = selfdefense_presence2 ~ Railways + telegraphs + 
+    rurales + morelos + mina + hidalgo + guerrero + french + 
+    dist_state_capital_log + elevation_log + dist_rail_k + gulf_3 + 
+    North_3 + Pacific_3 + pop_den_1921 + rural_p_1921 + cathol_p_1921 + 
+    agri_area_1928 + gov_fed_10K_1292 + police_10K_1928 + analfa_1921 + 
+    mem_per_union_1929 + loc_XVI + fran + dom + aug + jes + arch_zone + 
+    triple_all + chichimeca, data = bishops, listw = nb_InvB, 
+    endog = ~brig_all, instruments = ~bishop_dist100K, initial.value = 0.2, 
+    model = "lag", het = TRUE)
+
+Residuals:
+    Min.  1st Qu.   Median     Mean  3rd Qu.     Max. 
+-0.82090 -0.12263 -0.02356  0.00566  0.02999  1.10864 
+
+Coefficients:
+                          Estimate  Std. Error t-value  Pr(>|t|)    
+(Intercept)             5.4983e-02  1.2740e-01  0.4316 0.6660494    
+Railways                1.7141e-02  1.3418e-02  1.2775 0.2014128    
+telegraphs              1.5946e-02  1.2093e-02  1.3187 0.1872713    
+rurales                 1.7965e-02  1.3445e-02  1.3361 0.1815046    
+morelos                 1.4331e-01  5.1550e-02  2.7799 0.0054368 ** 
+mina                    7.7291e-02  8.9689e-02  0.8618 0.3888155    
+hidalgo                 4.8578e-02  5.7046e-02  0.8516 0.3944569    
+guerrero                9.6881e-02  8.3966e-02  1.1538 0.2485790    
+french                 -5.9631e-03  3.7375e-02 -0.1595 0.8732377    
+dist_state_capital_log -1.7237e-02  5.8319e-03 -2.9556 0.0031210 ** 
+elevation_log           1.1799e-03  1.8703e-03  0.6308 0.5281505    
+dist_rail_k             3.2105e-04  1.6802e-04  1.9108 0.0560285 .  
+gulf_3                  2.3712e-02  1.9594e-02  1.2101 0.2262289    
+North_3                 9.6893e-02  3.1452e-02  3.0807 0.0020654 ** 
+Pacific_3               9.9341e-02  2.0291e-02  4.8957 9.794e-07 ***
+pop_den_1921            5.5983e-04  2.5018e-04  2.2377 0.0252411 *  
+rural_p_1921           -3.8739e-01  1.0128e-01 -3.8248 0.0001309 ***
+cathol_p_1921           2.0196e-01  1.3834e-01  1.4598 0.1443343    
+agri_area_1928         -5.6078e-03  1.5573e-03 -3.6010 0.0003170 ***
+gov_fed_10K_1292        1.6715e-03  3.9656e-04  4.2148 2.500e-05 ***
+police_10K_1928        -3.9673e-03  2.0217e-03 -1.9623 0.0497263 *  
+analfa_1921             3.2510e-03  7.3490e-04  4.4238 9.699e-06 ***
+mem_per_union_1929     -1.6178e-04  7.4670e-05 -2.1667 0.0302604 *  
+loc_XVI                 6.3588e-03  1.4844e-02  0.4284 0.6683857    
+fran                   -7.3742e-05  1.2621e-03 -0.0584 0.9534086    
+dom                    -3.2841e-03  1.1950e-03 -2.7483 0.0059911 ** 
+aug                     1.6419e-03  1.7844e-03  0.9201 0.3575032    
+jes                    -1.4633e-03  1.4695e-03 -0.9958 0.3193562    
+arch_zone               1.8604e-02  3.0742e-02  0.6052 0.5450596    
+triple_all              1.1192e-03  3.3306e-04  3.3605 0.0007779 ***
+chichimeca             -3.6340e-04  1.5740e-04 -2.3088 0.0209523 *  
+brig_all                1.9227e-01  4.5117e-02  4.2615 2.031e-05 ***
+lambda                  1.1824e+00  1.4285e-01  8.2770 < 2.2e-16 ***
+rho                    -6.9009e-01  1.2702e-01 -5.4330 5.542e-08 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+

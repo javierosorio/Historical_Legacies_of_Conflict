@@ -1,0 +1,37 @@
+
+ Generalized stsls
+
+Call:
+spreg(formula = selfdefense_presence2 ~ brig_all + Railways + 
+    telegraphs + rurales + morelos + mina + hidalgo + guerrero + 
+    french + dist_state_capital_log + elevation_log + dist_rail_k + 
+    gulf_3 + North_3 + Pacific_3, data = bishops, listw = nb_InvB, 
+    initial.value = 0.2, model = "lag", het = TRUE)
+
+Residuals:
+    Min.  1st Qu.   Median     Mean  3rd Qu.     Max. 
+-0.65050 -0.10218 -0.03706  0.00652 -0.00446  1.03740 
+
+Coefficients:
+                          Estimate  Std. Error t-value  Pr(>|t|)    
+(Intercept)             1.3883e-01  6.7692e-02  2.0510  0.040271 *  
+brig_all                6.1732e-02  1.5596e-02  3.9582 7.553e-05 ***
+Railways                7.4112e-03  1.3290e-02  0.5577  0.577078    
+telegraphs              1.9115e-02  1.2426e-02  1.5383  0.123969    
+rurales                 1.0657e-02  1.3111e-02  0.8128  0.416329    
+morelos                 2.1985e-01  5.1726e-02  4.2503 2.135e-05 ***
+mina                    2.0164e-02  8.3174e-02  0.2424  0.808443    
+hidalgo                 5.1570e-02  5.6208e-02  0.9175  0.358893    
+guerrero                1.7157e-01  8.5414e-02  2.0086  0.044576 *  
+french                  4.4521e-05  3.8224e-02  0.0012  0.999071    
+dist_state_capital_log -1.5008e-02  5.9888e-03 -2.5060  0.012212 *  
+elevation_log           3.4786e-03  1.7544e-03  1.9828  0.047389 *  
+dist_rail_k             2.0609e-04  1.5542e-04  1.3260  0.184841    
+gulf_3                  2.4488e-02  1.5355e-02  1.5948  0.110760    
+North_3                 7.4146e-03  2.5515e-02  0.2906  0.771360    
+Pacific_3               9.5635e-02  1.9734e-02  4.8462 1.258e-06 ***
+lambda                  1.0528e+00  1.7369e-01  6.0613 1.350e-09 ***
+rho                    -4.1311e-01  1.4001e-01 -2.9507  0.003171 ** 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
