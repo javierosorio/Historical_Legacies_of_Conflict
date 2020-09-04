@@ -1,9 +1,12 @@
 # Historical Legacies of Conflict
 
 These are the replication files for the paper: 
+
 Osorio, Javier, Livia Schubiger, and Michael Weintraub, 2020, "Legacies of Resistance:Mobilization Against Organized Crime in Mexico," Comparative Political Studies, XXX.
 
-The replication package includes the following folders and files
+To run the replication files for this research, you will need R and the associated packages indicated in the script.
+
+The replication package includes the following folders and files:
 
 * 'data'
   * 'muns' This folder contains the shapefiles of municipalities.
